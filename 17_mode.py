@@ -11,3 +11,8 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    val = 1
+    frequency_dict = {n: val += 1 for n in nums }
+    return frequency_dict
+
+    # go vote if age >= 18 else go play

@@ -19,3 +19,7 @@ def partition(lst, fn):
         >>> partition(["hi", None, 6, "bye"], is_string)
         [['hi', 'bye'], [None, 6]]
     """
+    true_array = [element for element in lst if fn(element)]
+    false_array = [element for element in lst if not fn(element)]
+
+    return [true_array, false_array]

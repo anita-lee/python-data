@@ -28,3 +28,29 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
           ...
         ValueError: Invalid Operation
     """
+
+#can we create an instance with float. <<< class???
+
+    result = f"{operation}"(a,b)
+
+    if make_int:
+        return f"{message} {int(result)}"
+    else:
+        return f"{message} {result}"
+
+
+
+
+
+
+def add(a,b):
+    return a + b
+
+def subtract(a,b): 
+    return a - b
+
+def divide(a,b):
+    return a / b
+
+def multiply(a,b):
+    return a * b
